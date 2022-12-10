@@ -1,0 +1,179 @@
+::-moz-selection {
+  color: #212121;
+  background: #FFE551;
+}
+
+::selection {
+  color: #212121;
+  background: #FFE551;
+}
+
+br {
+  user-select: none;
+}
+
+pre {
+  padding: 1rem 1rem;
+  border: 1px solid #fff;
+  overflow-x: auto;
+  margin: 0;
+  font-family: inherit;
+  color: #c4c4c4;
+}
+
+code {
+  font-family: inherit;
+  color: #999999;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #fff;
+}
+
+table {
+  border-collapse: collapse;
+  max-width: 100%;
+}
+
+table, th, td { 
+  border: 1px solid #fff;
+  font-size: 0.8rem;
+}
+
+th, td {
+  text-align: center;
+}
+
+td {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, .subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+header, footer, .body {
+  font-size: 1.1rem;
+}
+
+html {
+  width: 100%;
+  position: relative;
+  min-height: 100%;
+  font-family: monospace;
+  letter-spacing: 0.02rem;
+  background-color: #212121;
+  color: #e0e0e0;
+}
+
+main {
+  margin-bottom: 10rem;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header a:not(:last-of-type) {
+  margin-right: 1rem;
+}
+
+header > nav > a.ltx {
+  color: #FFE551;
+}
+
+header > nav > a.active {
+  font-style: italic;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header ul {
+  list-style: none;
+  padding-inline-start: 0;
+  padding-right: 1rem;
+}
+
+footer {
+  position: absolute;
+  height: auto;
+  bottom: 1rem;
+  margin: auto;
+  width: calc(100% - 20px);
+}
+
+footer .left {
+  position: relative;
+  top: 50%;
+  float: left;
+}
+
+footer .right {
+  position: relative;
+  top: 50%;
+  float: right;
+}
+
+footer > .right > a {
+  width: min-content;
+  height: min-content;
+  text-decoration: none;
+}
+
+article:not(:last-of-type) {
+  padding-bottom: 2rem;
+}
+
+.splash-container {
+  margin: inherit;
+  margin-bottom: 2rem;
+}
+
+.splash-container *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.splash {
+  width: 100%;
+  background-image: url("/falcon_heavy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 25%;
+}
+
+@media only screen and (max-width: 600px) {
+  .splash {
+    height: 25vh;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .splash {
+    height: 40vh;
+  }
+}
